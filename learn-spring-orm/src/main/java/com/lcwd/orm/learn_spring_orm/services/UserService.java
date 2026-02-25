@@ -1,0 +1,17 @@
+package com.lcwd.orm.learn_spring_orm.services;
+
+import com.lcwd.orm.learn_spring_orm.entities.User;
+import org.springframework.boot.webmvc.autoconfigure.WebMvcProperties;
+
+import java.util.List;
+
+
+public interface UserService {
+    User saveUser(User user);
+    User updateUser(User user , int userId);
+    void deleteUser( int userId);
+    List<User> getAllUser();
+    User getUser(int userId);
+
+
+}
